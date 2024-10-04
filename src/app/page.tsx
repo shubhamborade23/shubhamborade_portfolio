@@ -55,7 +55,7 @@ export default function Page() {
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
-            <div className="pl-4 flex-col flex flex-1 space-y-1.5 text-center items-center">
+            <div className="flex-col flex flex-1 space-y-1.5 text-center items-center">
               <HyperText
                 className="text-3xl font-bold font-sans tracking-tighter sm:text-5xl xl:text-5xl/none"
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
