@@ -48,14 +48,14 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between flex-col">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
-            <div className="pl-4 flex-col flex flex-1 space-y-1.5">
+            <div className="pl-4 flex-col flex flex-1 space-y-1.5 text-center items-center">
               <HyperText
                 className="text-3xl font-bold font-sans tracking-tighter sm:text-5xl xl:text-5xl/none"
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
@@ -70,13 +70,17 @@ export default function Page() {
         </div>
       </section>
       <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans xs:text-xl/relaxed text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                About
+              </div>
+              <Markdown className="prose max-w-full text-pretty font-sans xs:text-xl/relaxed text-muted-foreground dark:prose-invert">
+                {DATA.summary}
+              </Markdown>
+            </div>
+          </div>
         </BlurFade>
       </section>
       {/* <section id="work">
@@ -106,8 +110,14 @@ export default function Page() {
       </section> */}
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Education
+                </div>
+              </div>
+            </div>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
@@ -129,8 +139,14 @@ export default function Page() {
       </section>
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Skills
+                </div>
+              </div>
+            </div>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
