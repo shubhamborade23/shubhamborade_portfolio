@@ -48,14 +48,14 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-10 flex items-center justify-between">
+          <div className="flex items-center justify-between">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
-            <div className="flex-col flex flex-1 space-y-1.5">
+            <div className="pl-4 flex-col flex flex-1 space-y-1.5">
               <HyperText
                 className="text-3xl font-bold font-sans tracking-tighter sm:text-5xl xl:text-5xl/none"
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
