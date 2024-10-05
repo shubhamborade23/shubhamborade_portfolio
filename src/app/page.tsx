@@ -10,6 +10,8 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import { IconCloud } from "@/components/magicui/icon-cloud";
 import { HyperText } from "@/components/magicui/hyper-text";
+import { RainbowButton } from "@/components/ui/rainbow-button";
+import { ConfettiDemo } from "@/components/achievements";
 
 const slugs = [
   "typescript",
@@ -47,6 +49,9 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
+        <div className="flex items-center justify-end">
+          <RainbowButton>Download</RainbowButton>
+        </div>
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="flex items-center justify-between flex-col">
             <BlurFade delay={BLUR_FADE_DELAY}>
@@ -196,6 +201,23 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="achievements">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Achievements
+                </div>
+                <p className="xs:text-xl/relaxed text-muted-foreground">
+                  These are my few achievements.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <ConfettiDemo />
         </div>
       </section>
       <section id="hackathons">

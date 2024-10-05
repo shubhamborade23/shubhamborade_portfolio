@@ -184,6 +184,26 @@ export const DATA = {
       end: "2014",
     },
   ],
+  achievements: [
+    {
+      title: "Salesforce B2C Commerce Cloud Certification",
+      date: "December 2022",
+      link: "",
+      org: "Apexon"
+    },
+    {
+      title: "Pat of The Back",
+      date: "February 2023",
+      link: "",
+      org: "Apexon"
+    },
+    {
+      title: "Pat of The Back",
+      date: "September 2022",
+      link: "",
+      org: "Apexon"
+    },
+  ],
   projects: [
     {
       title: "ASDA",
@@ -251,7 +271,7 @@ export const DATA = {
     {
       title: "Pet Supermarket",
       href: "https://www.petsupermarket.com",
-      dates: "December 2023 - January 2024",
+      dates: "December 2022 - January 2024",
       active: true,
       description:
         "Developed multiple features, services, and enahnced landing pages and added new features to it.",
@@ -280,7 +300,7 @@ export const DATA = {
     {
       title: "Aerin Beauty",
       href: "https://www.aerin.com/",
-      dates: "May 2021 - December 2021",
+      dates: "May 2021 - December 2022",
       active: true,
       description:
         "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
