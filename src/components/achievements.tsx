@@ -18,14 +18,14 @@ export function ConfettiDemo() {
           <ol className="">
             {DATA.achievements.map((achievement, id) => (
               <>
-                <li className="text-sx flex gap-5 py-1">
+                <li className="text-sx flex gap-5 py-1 items-baseline">
                   <p className="flex flex-col items-start flex-1">
                     {achievement.title}{" "}
                     <span className="text-xs text-muted-foreground">
                       {achievement.org}
                     </span>
                   </p>
-                  <p className="flex-end">{achievement.date}</p>
+                  <p className="flex-end text-xs text-muted-foreground">{achievement.date}</p>
                 </li>
               </>
             ))}
