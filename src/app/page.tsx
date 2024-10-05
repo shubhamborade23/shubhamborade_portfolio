@@ -49,9 +49,9 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
-        <div className="flex items-center justify-end">
+        {/* <div className="flex items-center justify-end">
           <RainbowButton>Download</RainbowButton>
-        </div>
+        </div> */}
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="flex items-center justify-between flex-col">
             <BlurFade delay={BLUR_FADE_DELAY}>
