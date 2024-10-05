@@ -192,13 +192,13 @@ export const DATA = {
       org: "Apexon"
     },
     {
-      title: "Pat of The Back",
+      title: "Pat on The Back",
       date: "February 2023",
       link: "",
       org: "Apexon"
     },
     {
-      title: "Pat of The Back",
+      title: "Pat on The Back",
       date: "September 2022",
       link: "",
       org: "Apexon"
